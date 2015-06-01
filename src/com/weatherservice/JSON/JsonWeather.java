@@ -36,15 +36,12 @@ public class JsonWeather {
   
     private Sys sys;
     private List<Weather> weather = new ArrayList<Weather>();
-    private String base;
+   
     private Main main;
     private Wind wind;
-   
-    private Integer dt;
     private Integer id;
     private String name;
-    private Integer cod;
-  
+ 
 
    
     /**
@@ -85,24 +82,6 @@ public class JsonWeather {
     }
 
    
-    /**
-     * 
-     * @return
-     *     The base
-     */
-    public String getBase() {
-        return base;
-    }
-
-    /**
-     * 
-     * @param base
-     *     The base
-     */
-    public void setBase(String base) {
-        this.base = base;
-    }
-
    
     /**
      * 
@@ -166,11 +145,7 @@ public class JsonWeather {
         this.id = id;
     }
 
-    public JsonWeather withId(Integer id) {
-        this.id = id;
-        return this;
-    }
-
+   
     /**
      * 
      * @return
@@ -191,28 +166,6 @@ public class JsonWeather {
 
    
 
-    /**
-     * 
-     * @return
-     *     The cod
-     */
-    public Integer getCod() {
-        return cod;
-    }
-
-    /**
-     * 
-     * @param cod
-     *     The cod
-     */
-    public void setCod(Integer cod) {
-        this.cod = cod;
-    }
-
-    public JsonWeather withCod(Integer cod) {
-        this.cod = cod;
-        return this;
-    }
 
    
 }
